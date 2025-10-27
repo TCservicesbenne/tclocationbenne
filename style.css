@@ -1,0 +1,194 @@
+/* ----------------------------- */
+/*   STYLES GÉNÉRAUX ET POLICE   */
+/* ----------------------------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: #ff6600;
+}
+
+/* ----------------------------- */
+/*          NAVIGATION           */
+/* ----------------------------- */
+header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.logo span {
+  color: #ff6600;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* ----------------------------- */
+/*             HERO              */
+/* ----------------------------- */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://images.unsplash.com/photo-1581093916664-9dfe8c7a73b6?auto=format&fit=crop&w=1500&q=80') center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}
+
+/* ----------------------------- */
+/*           SECTIONS            */
+/* ----------------------------- */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: #fff8f2;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #ff6600;
+  margin: 15px 0 5px;
+}
+
+/* ----------------------------- */
+/*           GALERIE             */
+/* ----------------------------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ----------------------------- */
+/*           CONTACT             */
+/* ----------------------------- */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------------------- */
+/*            FOOTER             */
+/* ----------------------------- */
+footer {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* ----------------------------- */
+/*         RESPONSIVE            */
+/* ----------------------------- */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2em;
+  }
+}
